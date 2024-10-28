@@ -1,7 +1,7 @@
 {
-  "name": "celestia-homework",
+  "name": "terminal-celenium-rollup-leaderboard",
   "version": "1.0.0",
-  "description": "Here comes text explaining what we're doing",
+  "description": "Reconstruct the rollup leaderboard in the terminal using Celenium API",
   "main": "src/leaderboard.js",
   "type": "module",
   "scripts": {
