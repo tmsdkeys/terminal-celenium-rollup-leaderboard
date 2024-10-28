@@ -39,4 +39,4 @@ You could build on this project by:
 
 * You can take the leaberboard and use it as a base to create an NFT collection for the leaders with mammoth and/or sloth NFT images. Check out [LightLink](https://lightlink.io) and [Forma](https://forma.art/) or other [Celestia ecosystem](https://celestia.org/ecosystem/) projects.
 
-* Whatever... 🦥
+* Building whatever... 🦥
