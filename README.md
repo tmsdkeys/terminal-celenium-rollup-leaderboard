@@ -8,6 +8,8 @@ However, the [Celenium API](https://api-docs.celenium.io/folder-1558675)'s free 
 
 This repository contatins a small script that allows to recreate the rollup leaderboard in your terminal, learning a thing or two about Celestia and its architecture along the way.
 
+Watch the video explanation [here](https://www.loom.com/share/a6baf5938d8f4250b68061642738f171).
+
 ## Lazy start 🦥 💤
 
 As a prerequisite, make sure you've got a recent version of [Node.js](https://nodejs.org/en) installed on your machine.
