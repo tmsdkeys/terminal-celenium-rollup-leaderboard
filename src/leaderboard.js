@@ -1,6 +1,22 @@
 import { fetchNamespaceData, fetchRollupData } from "./apiRequest.js";
 import { outputLeaderboard, formatDescription } from "./output.js";
 
+// Get the user input from command-line arguments
+const args = process.argv.slice(2); // Ignore the first two arguments (node path and script path)
+
+// Parse and validate the limit argument
+const parseLimit = (arg, defaultValue = 10) => {
+   const limit = parseInt(arg, 10); // Attempt to parse the argument as an integer
+   if (isNaN(limit) || limit <= 0) {
+      console.log(`Invalid limit provided. Using default limit: ${defaultValue}`);
+      return defaultValue;
+   }
+   return limit;
+};
+
+// Set the limit from user input or default to 10
+const limit = parseLimit(args[0]);
+
 // Function to simplify the data structure by omitting unimportant fields
 const simplifyData = (data) => {
     return data.map(item => ({
@@ -54,4 +70,4 @@ const processData = async (limit) => {
  };
  
  // Call the processData function
-processData(3);
+processData(limit);
