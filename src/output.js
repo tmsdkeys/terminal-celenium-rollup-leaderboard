@@ -34,7 +34,7 @@ export const outputLeaderboard = (simplifiedData) => {
         console.log(`   🏆 Number ${i + 1}: ${item.rollup_name || "Unknown Name"}`);
         console.log(`   📜 Description: ${formatDescription(item.rollup_description || "No description available")}`);
         console.log(`   🌍 Find them at ${item.rollup_website || "No Website Available"}`);
-        console.log(`   📦 They have posted ${item.blob_count || 0} blobs with a total size of ${formatSize(item.size) || 0}.\n`);
+        console.log(`   📦 They have posted ${item.blobs_count || 0} blobs with a total size of ${formatSize(item.size) || 0}.\n`);
     }
    console.log("──────────────────────────────────────────────────────────");
    console.log(`
@@ -79,5 +79,5 @@ export const outputLeaderboard = (simplifiedData) => {
    console.log(`        🏆 Name: ${simplifiedData[0].rollup_name || "Unknown Name"}`);
    console.log(`        📜 Description: ${formatDescription(simplifiedData[0].rollup_description || "No description available")}`);
    console.log(`        🌍 Find them at ${simplifiedData[0].rollup_website || "No Website Available"}`);
-   console.log(`        📦 They have posted ${simplifiedData[0].blob_count || 0} blobs with a total size of ${formatSize(simplifiedData[0].size) || 0}.\n`);
+   console.log(`        📦 They have posted ${simplifiedData[0].blobs_count || 0} blobs with a total size of ${formatSize(simplifiedData[0].size) || 0}.\n`);
 };

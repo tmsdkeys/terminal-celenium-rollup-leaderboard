@@ -21,7 +21,7 @@ const limit = parseLimit(args[0]);
 const simplifyData = (data) => {
     return data.map(item => ({
        size: item.size || null,
-       blob_count: item.blobs_count || null,
+       blobs_count: item.blobs_count || null,
        namespace_id: item.namespace_id || null,
        rollup_name: item.rollup[0]["name"] || null,
        rollup_description: formatDescription(item.rollup[0]["description"]) || null,
