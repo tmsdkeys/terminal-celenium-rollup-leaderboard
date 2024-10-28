@@ -1,0 +1,13 @@
+{
+  "name": "celestia-homework",
+  "version": "1.0.0",
+  "description": "Here comes text explaining what we're doing",
+  "main": "src/leaderboard.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
